@@ -28,7 +28,7 @@ func TestParseGitURLs(t *testing.T) {
 					Scheme: "ssh",
 					User:   url.User("git"),
 					Host:   "127.0.0.1",
-					Path:   "go-gitea/gitea.git",
+					Path:   "titanomyrma/giteatest.git",
 				},
 				extraMark: 1,
 			},

@@ -79,7 +79,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: gitea/gitea
+          images: ghcr.io/titanomyrma/giteatest
           flavor: |
             latest=false
           # 1.2.3-rc0
@@ -110,7 +110,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: gitea/gitea
+          images: ghcr.io/titanomyrma/giteatest
           # each tag below will have the suffix of -rootless
           flavor: |
             latest=false

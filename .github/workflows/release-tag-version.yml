@@ -81,7 +81,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: gitea/gitea
+          images: ghcr.io/titanomyrma/giteatest
           # this will generate tags in the following format:
           # latest
           # 1
@@ -116,7 +116,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: gitea/gitea
+          images: ghcr.io/titanomyrma/giteatest
           # each tag below will have the suffix of -rootless
           flavor: |
             suffix=-rootless,onlatest=true

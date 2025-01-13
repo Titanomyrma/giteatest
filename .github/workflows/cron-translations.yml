@@ -8,7 +8,7 @@ on:
 jobs:
   crowdin-pull:
     runs-on: ubuntu-latest
-    if: github.repository == 'go-gitea/gitea'
+    if: github.repository == 'titanomyrma/giteatest'
     steps:
       - uses: actions/checkout@v4
       - uses: crowdin/github-action@v1
@@ -34,5 +34,5 @@ jobs:
           branch: main
           commit: true
           commit_message: "[skip ci] Updated translations via Crowdin"
-          remote: "git@github.com:go-gitea/gitea.git"
+          remote: "git@github.com:titanomyrma/giteatest.git"
           ssh_key: ${{ secrets.DEPLOY_KEY }}

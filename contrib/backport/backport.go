@@ -209,7 +209,7 @@ func runBackport(c *cli.Context) error {
 	}
 
 	if !c.Bool("no-push") {
-		url := "https://github.com/go-gitea/gitea/compare/" + upstreamReleaseBranch + "..." + forkUser + ":" + backportBranch
+		url := "https://github.com/titanomyrma/giteatest/compare/" + upstreamReleaseBranch + "..." + forkUser + ":" + backportBranch
 
 		if err := gitPushUp(ctx, remote, backportBranch); err != nil {
 			return err

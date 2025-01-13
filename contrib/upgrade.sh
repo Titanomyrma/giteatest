@@ -53,7 +53,7 @@ while true; do
     -y | --yes ) no_confirm="yes"; shift ;;
     --ignore-gpg) ignore_gpg="yes"; shift ;;
     "" | -- ) shift; break ;;
-    * ) echo "Usage:  [<environment vars>] upgrade.sh [-v <version>] [-y] [--ignore-gpg]"; exit 1;; 
+    * ) echo "Usage:  [<environment vars>] upgrade.sh [-v <version>] [-y] [--ignore-gpg]"; exit 1;;
   esac
 done
 
@@ -87,7 +87,7 @@ echo "Checking currently installed version..."
 current=$(giteacmd --version | cut -d ' ' -f 3)
 [[ "$current" == "$giteaversion" ]] && echo "$current is already installed, stopping." && exit 1
 if [[ -z "${no_confirm:-}"  ]]; then
-  echo "Make sure to read the changelog first: https://github.com/go-gitea/gitea/blob/main/CHANGELOG.md"
+  echo "Make sure to read the changelog first: https://github.com/titanomyrma/giteatestblob/main/CHANGELOG.md"
   echo "Are you ready to update Gitea from ${current} to ${giteaversion}? (y/N)"
   read -r confirm
   [[ "$confirm" == "y" ]] || [[ "$confirm" == "Y" ]] || exit 1

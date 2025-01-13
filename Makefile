@@ -38,7 +38,7 @@ GOVULNCHECK_PACKAGE ?= golang.org/x/vuln/cmd/govulncheck@v1
 ACTIONLINT_PACKAGE ?= github.com/rhysd/actionlint/cmd/actionlint@v1
 GOPLS_PACKAGE ?= golang.org/x/tools/gopls@v0.17.0
 
-DOCKER_IMAGE ?= gitea/gitea
+DOCKER_IMAGE ?= ghcr.io/titanomyrma/giteatest
 DOCKER_TAG ?= latest
 DOCKER_REF := $(DOCKER_IMAGE):$(DOCKER_TAG)
 
